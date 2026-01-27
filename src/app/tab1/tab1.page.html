@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- SALDO UTAMA -->
+  <ion-card class="saldo-card">
+    <ion-card-content>
+      <div class="saldo-header">
+        <ion-icon name="wallet-outline"></ion-icon>
+        <span>Saldo Total</span>
+      </div>
+      <h1 class="saldo-angka">Rp {{ saldo }}</h1>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- RINGKASAN -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="summary income">
+          <ion-card-content>
+            <ion-icon name="arrow-up-circle-outline"></ion-icon>
+            <p>Pemasukan</p>
+            <strong>Rp {{ pemasukan }}</strong>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="summary expense">
+          <ion-card-content>
+            <ion-icon name="arrow-down-circle-outline"></ion-icon>
+            <p>Pengeluaran</p>
+            <strong>Rp {{ pengeluaran }}</strong>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- TRANSAKSI TERAKHIR -->
+  <ion-card>
+    <ion-card-content>
+      <h3 class="section-title">Transaksi Terakhir</h3>
+
+      <div *ngFor="let d of lastData" class="list-item">
+        <div class="item-left">
+          <strong>{{ d.nama }}</strong>
+        </div>
+
+        <div
+          class="item-right"
+          [class.plus]="d.jenis==='+'"
+          [class.minus]="d.jenis==='-'">
+          {{ d.jenis }} Rp {{ d.nominal }}
+        </div>
+      </div>
+
+<ion-button
+  expand="block"
+  href="/tabs/tab2">
+  Lihat Semua Transaksi
+</ion-button>
+
+
+
+    </ion-card-content>
+  </ion-card>
+
+  <div style="height:80px"></div>
+
+</ion-content>

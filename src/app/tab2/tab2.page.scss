@@ -1,0 +1,73 @@
+ion-card {
+    --background: linear-gradient(
+    180deg,
+    #eef8ff 0%,
+    #f7fdff 50%,
+    #ffffff 100%
+  );
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.15);
+}
+.section-title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* BUTTON */
+.btn-simpan {
+  margin-top: 16px;
+}
+
+/* TOTAL */
+.total-card {
+  text-align: center;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  border-radius: 16px;
+}
+
+.total-card p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.total-card h2 {
+  margin-top: 6px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* TRANSAKSI */
+.transaksi-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.left p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.left small {
+  font-size: 11px;
+  color: #999;
+}
+
+.right {
+  text-align: right;
+}
+
+.plus {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.minus {
+  color: #e74c3c;
+  font-weight: bold;
+}

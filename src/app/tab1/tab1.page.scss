@@ -1,0 +1,92 @@
+ion-card {
+    --background: linear-gradient(
+    180deg,
+    #eef8ff 0%,
+    #f7fdff 50%,
+    #ffffff 100%
+  );
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.15);
+}
+
+/* SALDO CARD */
+.saldo-card {
+  text-align: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+  border-radius: 16px;
+}
+
+.saldo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.saldo-header ion-icon {
+  font-size: 22px;
+}
+
+.saldo-angka {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* SUMMARY */
+.summary {
+  text-align: center;
+  border-radius: 14px;
+}
+
+.summary ion-icon {
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+.summary p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.summary strong {
+  font-size: 16px;
+}
+
+.income ion-icon {
+  color: #2ecc71;
+}
+
+.expense ion-icon {
+  color: #e74c3c;
+}
+
+/* TRANSAKSI */
+.section-title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.item-right {
+  font-weight: bold;
+}
+
+.plus {
+  color: #2ecc71;
+}
+
+.minus {
+  color: #e74c3c;
+}

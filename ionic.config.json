@@ -1,0 +1,7 @@
+{
+  "name": "tabunganku",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
