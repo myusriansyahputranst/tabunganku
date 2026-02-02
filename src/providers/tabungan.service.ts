@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TabunganService {
 
-  private baseUrl = 'http://localhost/apitabungan';
+  private baseUrl = 'https://rian.perangkatlunak.my.id/apitabungan/';
 
   constructor(private http: HttpClient) {}
 
